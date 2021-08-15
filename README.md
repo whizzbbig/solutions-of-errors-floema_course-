@@ -4,12 +4,12 @@ A repo of solutions related to huge junks of errors
 
 ## Contents
 
-- [You can use numbers for reference-style link definitions](#error-one)
-- [Error: Invalid Configuration Object. Webpack has been initialised....](#error-two)
+- [You can use numbers for reference-style link definitions](#error-1)
+- [Error: Invalid Configuration Object. Webpack has been initialised....](#error-2)
 
 
 
-## Error one
+## Error 1
 ```
 $ npm start
 > floema@1.0.0 start
@@ -54,7 +54,7 @@ could presist because of typo.
  ### Solution
 ``try to start again with the following lecture and follow the instructor carefully.``
 
-## Error two
+## Error 2
 ![error:2](https://cdn.discordapp.com/attachments/838608259413835806/841670767628124200/unknown.png)
 
 ### Reason
