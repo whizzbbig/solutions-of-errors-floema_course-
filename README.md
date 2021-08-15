@@ -1,8 +1,8 @@
 # solutions-of-errors
 A repo of solutions related to huge junks of errors
 
-[Error: Cannot find module './webpack-config'](#Error:1)
-[Error: Invalid Configuration Object. Webpack has been initialised....](#Error:2)
+[You can use numbers for reference-style link definitions][#Error:1]
+[Error: Invalid Configuration Object. Webpack has been initialised....][#Error:2]
 
 
 
@@ -49,8 +49,36 @@ could presist because of typo.
 ```
 
  ## Solution
-```
-try to start with the following lecture again.
-```
+``try to start again with the following lecture and follow the instructor carefully.``
 
 # Error:2
+![error:2](https://cdn.discordapp.com/attachments/838608259413835806/841670767628124200/unknown.png)
+
+## Reason
+``` 
+yet another error produced because of typo
+```
+
+## Solution
+``try to start again with the following lecture and follow the instructor carefully.``
+
+# Error:3
+
+![error:3](https://user-images.githubusercontent.com/54703305/129493969-94f41c90-6a58-452c-9dfe-7e325c0ca426.png)
+
+## Reason
+```
+The error is triggered by the missing of
+``module.exports``
+in webpack.config.js
+```
+## Solution
+```
+continue with the course later down the course after adding 
+``const dirNode = 'node_modules' & module.exports`` 
+to 
+``webpack.config.js``
+will fix the error ^
+```
+
+# Error:4
