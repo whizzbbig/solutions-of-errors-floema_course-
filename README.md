@@ -30,6 +30,7 @@ the error or bizzaro'ends showing no errors then come to this repo
 - [Error: 14](#error-14)
 - [Error: 15](#error-15)
 - [Error: 16](#error-16)
+- [Webpack taking time to compile :(](#error-17)
 
 ## Questions
 - [Question 1](#question-1)
@@ -368,6 +369,149 @@ app.use(express.urlencoded())
 ``if section.slice_type == 'highlight'``
 if this not able to solve the problem do follow the lecture again carefully ^
 
+## Error 17
+
+```
+npm start
+
+> floema@1.0.0 start /Users/desartist22/Desktop/Experience.me/floema
+> concurrently --kill-others "npm run backend:development" "npm run frontend:development"
+
+[0] 
+[0] > floema@1.0.0 backend:development /Users/desartist22/Desktop/Experience.me/floema
+[0] > nodemon app.js
+[0] 
+[1] 
+[1] > floema@1.0.0 frontend:development /Users/desartist22/Desktop/Experience.me/floema
+[1] > webpack serve --progress --config webpack.config.development.js
+[1] 
+[0] [nodemon] 2.0.12
+[0] [nodemon] to restart at any time, enter `rs`
+[0] [nodemon] watching path(s): *.*
+[0] [nodemon] watching extensions: js,mjs,json
+[0] [nodemon] starting `node app.js`
+[0] Example app listening at http://localhost:3000
+[1] <s> [webpack.Progress] 0% 
+[1] 
+[1] <s> [webpack.Progress] 1% setup initialize
+[1] <s> [webpack.Progress] 1% setup initialize
+[1] <s> [webpack.Progress] 3% setup watch run
+[1] <s> [webpack.Progress] 3% setup watch run webpack-cli
+[1] <s> [webpack.Progress] 3% setup watch run WebpackDevMiddleware
+[1] <s> [webpack.Progress] 3% setup watch run
+[1] <s> [webpack.Progress] 4% setup normal module factory
+[1] <s> [webpack.Progress] 4% setup normal module factory
+[1] <s> [webpack.Progress] 5% setup context module factory
+[1] <s> [webpack.Progress] 5% setup context module factory
+[1] <s> [webpack.Progress] 6% setup before compile
+[1] <s> [webpack.Progress] 6% setup before compile ProgressPlugin
+[1] <s> [webpack.Progress] 6% setup before compile
+[1] <s> [webpack.Progress] 7% setup compile
+[1] <s> [webpack.Progress] 7% setup compile ExternalsPlugin
+[1] <s> [webpack.Progress] 7% setup compile webpack-dev-server
+[1] <s> [webpack.Progress] 7% setup compile
+[1] <s> [webpack.Progress] 8% setup compilation
+[1] <s> [webpack.Progress] 8% setup compilation CopyPlugin
+[1] <s> [webpack.Progress] 8% setup compilation mini-css-extract-plugin
+[1] <s> [webpack.Progress] 8% setup compilation ArrayPushCallbackChunkFormatPlugin
+[1] <s> [webpack.Progress] 8% setup compilation JsonpChunkLoadingPlugin
+[1] <s> [webpack.Progress] 8% setup compilation StartupChunkDependenciesPlugin
+[1] <s> [webpack.Progress] 8% setup compilation ImportScriptsChunkLoadingPlugin
+[1] <s> [webpack.Progress] 8% setup compilation FetchCompileWasmPlugin
+[1] <s> [webpack.Progress] 8% setup compilation FetchCompileAsyncWasmPlugin
+[1] <s> [webpack.Progress] 8% setup compilation WorkerPlugin
+[1] <s> [webpack.Progress] 8% setup compilation SplitChunksPlugin
+[1] <s> [webpack.Progress] 8% setup compilation ResolverCachePlugin
+[1] <s> [webpack.Progress] 8% setup compilation
+[1] <s> [webpack.Progress] 9% setup compilation
+[1] <s> [webpack.Progress] 9% setup compilation ProgressPlugin
+[1] <s> [webpack.Progress] 9% setup compilation DefinePlugin
+[1] <s> [webpack.Progress] 9% setup compilation mini-css-extract-plugin
+[1] <s> [webpack.Progress] 9% setup compilation ImageMinimizerPlugin
+[1] <s> [webpack.Progress] 9% setup compilation ImageMinimizerPlugin
+[1] <s> [webpack.Progress] 9% setup compilation ChunkPrefetchPreloadPlugin
+[1] <s> [webpack.Progress] 9% setup compilation ModuleInfoHeaderPlugin
+[1] <s> [webpack.Progress] 9% setup compilation EvalDevToolModulePlugin
+[1] <s> [webpack.Progress] 9% setup compilation JavascriptModulesPlugin
+[1] <s> [webpack.Progress] 9% setup compilation JsonModulesPlugin
+[1] <s> [webpack.Progress] 9% setup compilation AssetModulesPlugin
+[1] <s> [webpack.Progress] 9% setup compilation EntryPlugin
+[1] <s> [webpack.Progress] 9% setup compilation EntryPlugin
+[1] <s> [webpack.Progress] 9% setup compilation RuntimePlugin
+[1] <s> [webpack.Progress] 9% setup compilation InferAsyncModulesPlugin
+[1] <s> [webpack.Progress] 9% setup compilation DataUriPlugin
+[1] <s> [webpack.Progress] 9% setup compilation FileUriPlugin
+[1] <s> [webpack.Progress] 9% setup compilation CompatibilityPlugin
+[1] <s> [webpack.Progress] 9% setup compilation HarmonyModulesPlugin
+[1] <s> [webpack.Progress] 9% setup compilation AMDPlugin
+[1] <s> [webpack.Progress] 9% setup compilation RequireJsStuffPlugin
+[1] <s> [webpack.Progress] 9% setup compilation CommonJsPlugin
+[1] <s> [webpack.Progress] 9% setup compilation LoaderPlugin
+[1] <s> [webpack.Progress] 9% setup compilation LoaderPlugin
+[1] <s> [webpack.Progress] 9% setup compilation NodeStuffPlugin
+[1] <s> [webpack.Progress] 9% setup compilation APIPlugin
+[1] <s> [webpack.Progress] 9% setup compilation ExportsInfoApiPlugin
+[1] <s> [webpack.Progress] 9% setup compilation WebpackIsIncludedPlugin
+[1] <s> [webpack.Progress] 9% setup compilation ConstPlugin
+[1] <s> [webpack.Progress] 9% setup compilation UseStrictPlugin
+[1] <s> [webpack.Progress] 9% setup compilation RequireIncludePlugin
+[1] <s> [webpack.Progress] 9% setup compilation RequireEnsurePlugin
+[1] <s> [webpack.Progress] 9% setup compilation RequireContextPlugin
+[1] <s> [webpack.Progress] 9% setup compilation ImportPlugin
+[1] <s> [webpack.Progress] 9% setup compilation SystemPlugin
+[1] <s> [webpack.Progress] 9% setup compilation ImportMetaPlugin
+[1] <s> [webpack.Progress] 9% setup compilation URLPlugin
+[1] <s> [webpack.Progress] 9% setup compilation DefaultStatsFactoryPlugin
+[1] <s> [webpack.Progress] 9% setup compilation DefaultStatsPresetPlugin
+[1] <s> [webpack.Progress] 9% setup compilation DefaultStatsPrinterPlugin
+[1] <s> [webpack.Progress] 9% setup compilation JavascriptMetaInfoPlugin
+[1] <s> [webpack.Progress] 9% setup compilation EnsureChunkConditionsPlugin
+[1] <s> [webpack.Progress] 9% setup compilation RemoveEmptyChunksPlugin
+[1] <s> [webpack.Progress] 9% setup compilation MergeDuplicateChunksPlugin
+[1] <s> [webpack.Progress] 9% setup compilation SideEffectsFlagPlugin
+[1] <s> [webpack.Progress] 9% setup compilation FlagDependencyExportsPlugin
+[1] <s> [webpack.Progress] 9% setup compilation NamedModuleIdsPlugin
+[1] <s> [webpack.Progress] 9% setup compilation NamedChunkIdsPlugin
+[1] <s> [webpack.Progress] 9% setup compilation DefinePlugin
+[1] <s> [webpack.Progress] 9% setup compilation TerserPlugin
+[1] <s> [webpack.Progress] 9% setup compilation TemplatedPathPlugin
+[1] <s> [webpack.Progress] 9% setup compilation RecordIdsPlugin
+[1] <s> [webpack.Progress] 9% setup compilation WarnCaseSensitiveModulesPlugin
+[1] <s> [webpack.Progress] 9% setup compilation EntryPlugin
+[1] <s> [webpack.Progress] 9% setup compilation EntryPlugin
+[1] <s> [webpack.Progress] 9% setup compilation EntryPlugin
+[1] <s> [webpack.Progress] 9% setup compilation ProvidePlugin
+[1] <s> [webpack.Progress] 9% setup compilation
+[1] <s> [webpack.Progress] 10% building
+[1] <s> [webpack.Progress] 10% building 0/1 entries 0/0 dependencies 0/0 modules
+[1] ℹ ｢wds｣: Project is running at http://localhost:8080/
+[1] ℹ ｢wds｣: webpack output is served from /
+[1] ℹ ｢wds｣: Content not from webpack is served from /Users/desartist22/Desktop/Experience.me/floema
+[1] <s> [webpack.Progress] 10% building import loader ./node_modules/babel-loader/lib/index.js
+[1] <s> [webpack.Progress] 10% building 0/5 entries 3/5 dependencies 0/2 modules
+[1] <s> [webpack.Progress] 10% building import loader ./node_modules/mini-css-extract-plugin/dist/loader.js
+[1] <s> [webpack.Progress] 10% building import loader ./node_modules/css-loader/dist/cjs.js
+[1] <s> [webpack.Progress] 10% building import loader ./node_modules/sass-loader/dist/cjs.js
+[1] <s> [webpack.Progress] 10% building import loader ./node_modules/postcss-loader/dist/cjs.js
+[1] <s> [webpack.Progress] 10% building 0/5 entries 5/5 dependencies 0/3 modules
+[1] <s> [webpack.Progress] 10% building import loader ./node_modules/file-loader/dist/cjs.js
+[1] <s> [webpack.Progress] 10% building import loader ./node_modules/image-minimizer-webpack-plugin/dist/loader.js
+[1] <s> [webpack.Progress] 10% building 0/5 entries 23/29 dependencies 1/13 modules
+[1] <s> [webpack.Progress] 10% building 0/5 entries 39/42 dependencies 5/22 modules
+[1] You did not set any plugins, parser, or stringifier. Right now, PostCSS does nothing. Pick plugins for your case on https://www.postcss.parts/ and use them in postcss.config.js.
+[1] <s> [webpack.Progress] 10% building 0/5 entries 51/54 dependencies 13/28 modules
+[1] <s> [webpack.Progress] 21% building 1/5 entries 52/55 dependencies 20/29 modules
+[1] <s> [webpack.Progress] 32% building 2/5 entries 52/55 dependencies 20/29 modules
+[1] <s> [webpack.Progress] 42% building 3/5 entries 62/62 dependencies 32/34 modules
+```
+
+### Reason
+``its taking that much time because of imageMinimizerPlugin``
+
+### Solution 
+``By disabling it in webpack.config.js file will solve the problem ^``
+
+it happens sometimes because of not enought memory power or process power
 
 # Questions
 
