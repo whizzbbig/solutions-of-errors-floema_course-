@@ -1,5 +1,5 @@
 # solutions-of-errors
-A repo of solutions related to huge junks of errors
+A repo of solutions related to huge bunch of errors
 all thanks to community members.
 
 # Note 
@@ -8,7 +8,7 @@ don't lose patience follow the course till the end of the slide and if you not a
 ```
 
 
-## Contents
+## Errors 
 
 - [You can use numbers for reference-style link definitions](#error-1)
 - [Error: Invalid Configuration Object. Webpack has been initialised....](#error-2)
@@ -21,6 +21,22 @@ don't lose patience follow the course till the end of the slide and if you not a
 - [Error: 9](#error-9)
 - [Error: 10](#error-10)
 - [Error: 11](#error-11)
+- [Error: 12](#error-12)
+- [Error: 13](#error-13)
+- [Error: 14](#error-14)
+- [Error: 15](#error-15)
+- [Error: 16](#error-16)
+
+## Questions
+- [Question 1](#question-1)
+- [Question 2](#question-2)
+- [Question 3](#question-3)
+- [Question 4](#question-4)
+- [Question 5](#question-6)
+- [Question 7](#question-7)
+- [Question 8](#question-8)
+- [Question 9](#question-9)
+- [Question 10](#question-10)
 
 
 ## Error 1
@@ -257,4 +273,192 @@ this is my webpack.config.development.js file:
 or
 ``pkill -f node``
 
+#### For Windows
+
+![Screenshot 2564-08-16 at 7 14 39 PM](https://user-images.githubusercontent.com/54703305/129573481-25701015-030f-4511-9ab3-534873d3bd54.png)
+
+
+### Students Faced this error in some other possibilities
+#### if you have ``exclude`` statements in your rules for babel 
+``The do this``
+![Screenshot 2564-08-16 at 7 22 23 PM](https://user-images.githubusercontent.com/54703305/129574611-3e045368-a76c-4e04-8b04-91666e1a8e82.png)
+
+
+## Error 12
+![image](https://user-images.githubusercontent.com/54703305/129574830-e51482bf-1f89-4283-a8be-567efa8cb462.png)
+
+### Reason 
+`` This is happening because you haven't installed concurrently globally.``
+
+### Solution
+
+``npm install -g concurrently`` by going to your root dir ``~``
+
+## Error 13
+
+```
+Error: D:\Awwwards-courses\Floema\views\pages\home.pug:6:1
+
+Unexpected block content
+
+
+home.pug:
+extends ../base.pug
+
+block variables 
+  - var template = 'home' 
+
+block content 
+  h1.collections__title Home
+
+
+base.pug:
+
+  body
+    include ./partials/preloader
+    include ./partials/navigation
+
+    .content#content(data-template=template)
+      block body
+```
+
+### Solution
+
+Change ``block body`` to ``block content`` in base.pug
+
+## Error 14
+![image](https://user-images.githubusercontent.com/54703305/129580836-3c795929-a13c-4f51-878c-9b1957131a19.png)
+
+### Answer 
+
+[stackoverflow](https://stackoverflow.com/questions/34600932/npm-eperm-operation-not-permitted-on-windows)
+
+## Error 15
+
+``Hi I am at the implementation of pug prismic and express part. Sometimes the routing works perfectly fine, sometimes it throws this error. Especially when I navigate between /collections and /home, it has to fetch collection the second time , it will fail for sure.   Is it possible that Prismic is unstable for unpaid users? Thanks in advance.``
+![image](https://user-images.githubusercontent.com/54703305/129581549-23249155-7b50-42c6-abce-9cd0fc92f878.png)
+
+### Reason 
+``bodyparser is commented``
+
+### Solution
+`` Use it``
+
+but why to comment body parser. because a student acknowledged it as a depricated if you guys wants to use any other solution
+then you can use this 
+
+```app.use(express.json())
+app.use(express.urlencoded())
+```
+
+## Error 16
+
+![image](https://user-images.githubusercontent.com/54703305/129582106-20b2b6b2-6f42-4b4e-a2ec-24c237c9960b.png)
+
+### Reason 
+
+``It's an mini typo``
+
+### Solution
+
+``if section.slice_type == 'highlight'``
+if this not able to solve the problem do follow the lecture again carefully ^
+
+
+# Questions
+
+
+## Question 1
+```js
+why does the development config script need:
+
+output: {
+    path: path.resolve(__dirname, "public"),
+  },
+``` 
+by @interactive-harp#6998
+
+### Answer
+``Here your telling webpack that the file it needs to send to the browser is this one!`` by @lunactec#1507
+
+## Question 2
+``why do we need to use express.js when we could use a webpack related plugin to use local server?`` by @interactive-harp#6998
+
+### Answer
+``For the ruting system and the integration of prismic
+plus its really easy to transform this website into a funcitonal ecommerce just becuase of that
+That means that, becuase of using express, every major change related to the product its easier to handle
+This is a really good resource to learn node and express.js basics! -> https://youtu.be/Oe421EPjeBE`` by @lunactec#1507
+
+## Question 3
+
+``What if we don't need any back-end or e-commerce.... then no neeed for express`` by @interactive-harp#6998
+
+### Answer
+
+``If you implement the routing client-side then yes, i think so`` by @lunactec#1507
+``If you don't want to have a CMS and BE integration, using routes is completely fine.`` by @bizarro#7465 ( course instructor )
+
+## Question 4
+
+``is there an advantage to use prismic than those?`` by @HenHeym#1915
+
+### Answer 4
+
+`` think possibly the Express integration. Usually it's just hard to do it in other CMS.`` by @bizarro#7645 ( course instructor )
+
+`` Internationalization is one for sure
+https://payloadcms.com/#express -> This one is in my scope! They have an integration with express too `` by @lunactec@1507
+
+## Question 5
+
+``if you ever need to implement a store in one of your sites, do you start from the same base you have, or do you use something else? For example on garoaskincare, how did you do it?`` by @HenHeym#1915
+
+### Answer 5 
+
+``y``
+
+## Question 6
+
+``does digital ocean and express need eachothers support? to put our site on digital ocean, do we need express/ a backend?
+usually i use github pages thats why wondering`` by @interactive-harp#6998
+
+### Answer 6 
+
+``Digital ocean its a cloud provider that let us deploy our code in there. In it self, it has built in support for express, yes. You can also reffer the last 2 classes to get more information about the deployment process. It depends of the implementation, but you dont really need a backend to deploy in a cloud provider!`` by @lunactec#1507
+
+## Question 7
+
+``to use connect with a cms, a backend such as express is needed right?`` by @interactive-harp#6998
+
+### Answer 7
+
+``Not really, it depends on the cms your using
+You can implement prismic without backend
+https://prismic.io/docs/technologies/integrating-with-an-existing-project-javascript`` by @lunactec#1507
+
+## Question 8 
+
+``Whats the downfall of client over backend implementation?`` by @interactive-harp#6998
+
+### Answer 8
+``Well, i dont think there is an special reason implementing a backend instead of a full client aprouch in this specific project, rather than bizarro's personal preference and experience
+Personally, i really like the backend aproach, it makes it simpler to maintain and i like backend routing too! Plus you can easely integrate alot of services! And its maybe more productive than a full client aproach.`` by @lunactec#1507
+
+``don't let the back end implementation let you down. I know it's not 100% related, but someone will ask you to make an editable website in the future, and you'll know how to do it. :smile:
+After you do the full course, if you check out this repo here: https://github.com/lhbizarro/bizar.ro/. You'll be able to understand how to do everything in GH Pages.`` by @bizarro#7645
+
+## Question 9
+``is  prismic allows a client to edit the site without them needing to know code?`` by @sweatythonk#7907
+
+### Answer 9
+``Yeah, if they have access to the primsic project, you can do that!`` by @lunactec#1507
+
+
+## Question 10
+
+``What about the connection issue? I doubt this is a Prismic issue, because for me it works half of the time. but It's frustrating to restart the server and wait for it to work.`` by @Weijie#0237
+
+### Answer 10
+``First put the express parsers, maybe that solve part of the issue!`` by @lunactec#1507
 
