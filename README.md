@@ -1,4 +1,7 @@
 # solutions-of-errors
+
+made for the amazing course available on awwwards: https://www.awwwards.com/academy/course/building-an-immersive-creative-website-from-scratch-without-frameworks
+
 A repo of solutions related to huge bunch of errors
 all thanks to community members.
 
