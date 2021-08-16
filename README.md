@@ -4,7 +4,8 @@ all thanks to community members.
 
 # Note 
 ``` 
-don't lose patience follow the course till the end of the slide and if you not able to counter the error or bizzaro'ends showing no errors then come to this repo
+don't lose patience follow the course till the end of the slide and if you not able to counter
+the error or bizzaro'ends showing no errors then come to this repo
 ```
 
 
