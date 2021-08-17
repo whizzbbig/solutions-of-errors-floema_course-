@@ -32,6 +32,7 @@ the error or bizzaro'ends showing no errors then come to this repo
 - [Error: 16](#error-16)
 - [Webpack taking time to compile :(](#error-17)
 - [Failed to apply ESLint fixes to the document. Please consider opening an issue with steps to reproduce.](#error-18)
+- [[nodemon] app crashed - waiting for file changes before starting...](#error-19)
 
 ## Questions
 - [Question 1](#question-1)
@@ -530,6 +531,26 @@ so if you not find the plugin you installed for globally you can follow with sol
 
 ### Solution 2
 if you use this ``./node_modules/.bin/eslint --init`` in your project will solve your problem ^. after this you don't need any ``.editorconfig``. file but if you have it then no worries there :)
+
+## Error 19
+``[nodemon] app crashed - waiting for file changes before starting...`` 
+
+### Reason
+``Usually happens when the servers process in the background.
+
+### Solution
+``so you need to stop them form terminal``
+#### For MacOs, Linux
+``pkill -f node``
+kill them all by running on terminal and it will work fine ^
+
+#### For Windows
+```
+ 1. Go to the task manager
+ 2. Then search-for node.js server-side javascript
+ 3. Then right click on it and end-task from the processes. 
+ 4. then do npm start and it will work fine ^
+ ```
 
 # Questions
 
