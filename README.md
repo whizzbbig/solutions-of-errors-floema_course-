@@ -31,6 +31,7 @@ the error or bizzaro'ends showing no errors then come to this repo
 - [Error: 15](#error-15)
 - [Error: 16](#error-16)
 - [Webpack taking time to compile :(](#error-17)
+- [Failed to apply ESLint fixes to the document. Please consider opening an issue with steps to reproduce.](#error-18)
 
 ## Questions
 - [Question 1](#question-1)
@@ -512,6 +513,23 @@ npm start
 ``By disabling it in webpack.config.js file will solve the problem ^``
 
 it happens sometimes because of not enought memory power or process power
+
+## Error 18 
+``Failed to apply ESLint fixes to the document. Please consider opening an issue with steps to reproduce.``
+I've installed those plugins also and also did what bizarro did but then also nothing happens :'(
+
+### Solution 1
+``npm install eslint -g``
+which will install eslint globally. install it in your root directory ^ `~`
+
+if this not solve your problem then follow with the [Solution 2](#solution-2)
+
+#### Check for the plugin in globally by passing this ``npm list -g`` command on terminal which will log out the plugins which are installed globally like this
+![Screenshot 2564-08-17 at 12 19 41 AM](https://user-images.githubusercontent.com/54703305/129614601-26b222e8-8ead-479c-a4da-4ac5ad97d605.png)
+so if you not find the plugin you installed for globally you can follow with solution 2
+
+### Solution 2
+if you use this ``./node_modules/.bin/eslint --init`` in your project will solve your problem ^. after this you don't need any ``.editorconfig``. file but if you have it then no worries there :)
 
 # Questions
 
