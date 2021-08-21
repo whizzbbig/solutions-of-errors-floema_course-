@@ -34,6 +34,7 @@ the error or bizzaro'ends showing no errors then come to this repo.
 - [Webpack taking time to compile :(](#error-17)
 - [Failed to apply ESLint fixes to the document. Please consider opening an issue with steps to reproduce.](#error-18)
 - [[nodemon] app crashed - waiting for file changes before starting...](#error-19)
+- [bable-loader@8.2.2 requires a peer of @babel/core@^7.0.0 but none is installed. You must installed peer dependencies yourself](#error-20)
 
 ## Questions
 - [Question 1](#question-1)
@@ -552,6 +553,23 @@ kill them all by running on terminal and it will work fine ^
  3. Then right click on it and end-task from the processes. 
  4. then do npm start and it will work fine ^
  ```
+ 
+ ## Error 20
+ ![image](https://user-images.githubusercontent.com/54703305/130318292-ddb7d3c6-32a3-4560-8485-85b0e9886d1c.png)
+### Reason
+there can be two reason that this error showing.
+* @babel/core isn't installed globally in your os.
+* @babel/core ins't in your devDependencies
+
+### Solution
+
+#### Solution 1
+try installing @babel/core into your devDependencies by passing following command ``npm install @babel/core --save-dev``
+
+``if Solution 1 didn't help then try following solution 2 ( will definetly work ^ )`` 
+#### Solution 2
+try installing @babel/core ``globally``. there wasn't any error at bizzaro side where he hasn't installed this plugin in devDependencies this is because the plugin was installed globally try passing this command into your root ``~`` directory ```npm install @babel/core -g```
+
 
 # Questions
 
