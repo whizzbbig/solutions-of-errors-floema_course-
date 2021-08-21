@@ -564,11 +564,14 @@ there can be two reason that this error showing.
 ### Solution
 
 #### Solution 1
-try installing @babel/core into your devDependencies by passing following command ``npm install @babel/core --save-dev``
+try installing @babel/core into your devDependencies by passing following command
+```npm install @babel/core --save-dev```
 
 ``if Solution 1 didn't help then try following solution 2 ( will definetly work ^ )`` 
 #### Solution 2
-try installing @babel/core ``globally``. there wasn't any error at bizzaro side where he hasn't installed this plugin in devDependencies this is because the plugin was installed globally try passing this command into your root ``~`` directory ```npm install @babel/core -g```
+try installing @babel/core ``globally``. there wasn't any error at bizzaro side where he hasn't installed this plugin in devDependencies this is because the plugin was installed globally try passing this command into your root ``~`` directory. To go in root directory pass this command 
+```cd ~```
+```npm install @babel/core -g```
 
 
 # Questions
