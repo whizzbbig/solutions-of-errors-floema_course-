@@ -5,13 +5,6 @@ made for the amazing course available on awwwards: [Building an immersive creati
 A repo of solutions related to huge bunch of errors
 all thanks to community members.
 
-# Gem 
-I found this gem this helpful [repo](https://gitlab.com/arata_rei/floema/-/commits/master) which helped me alot when working with this course. You can see the commits made according to the each videos of the course. Big Big Thanks to [arata_rei](https://twitter.com/arata_rei) for making this repo.
-you'll not possibly encounter any errors following this repo with the course. She defined each and every thing to understand the working of the structure and all.
-
-Note: as someone pointed out, the latest ``webpack-dev-server`` (v4, she still has v3.x) requires ``writeToDisk`` to be structured differently. It should be obvious if you read the console.
-
-
 Facing error downloading resources [resources](https://github.com/LunacTec/floema_resources) then download from this repo provided by lunactec.
 
 # Note 
