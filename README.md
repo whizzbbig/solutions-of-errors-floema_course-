@@ -37,6 +37,7 @@ the error or bizzaro'ends showing no errors then come to this repo.
 - [Failed to apply ESLint fixes to the document. Please consider opening an issue with steps to reproduce.](#error-18)
 - [[nodemon] app crashed - waiting for file changes before starting...](#error-19)
 - [bable-loader@8.2.2 requires a peer of @babel/core@^7.0.0 but none is installed. You must installed peer dependencies yourself](#error-20)
+- [writeToDisk Error](#error-21)
 
 ## Questions
 - [Question 1](#question-1)
@@ -578,6 +579,25 @@ try installing @babel/core into your devDependencies by passing following comman
 ``if Solution 1 didn't help then try following solution 2 ( will definetly work ^ )`` 
 #### Solution 2
 try installing @babel/core ``globally``. there wasn't any error at bizzaro side where he hasn't installed this plugin in devDependencies this is because the plugin was installed globally try passing this command into your root ``~`` directory. To go in root directory pass this command ``cd ~`` ``npm install @babel/core -g``
+
+## Error 21
+
+![Screenshot 2564-10-01 at 5 19 45 PM](https://user-images.githubusercontent.com/54703305/135615436-19c86d49-ed91-459d-b2ca-c8211d709130.png)
+
+### Reason
+Webpack change the way we write ``writeToDisk``
+
+### Solution 
+Try doing this 
+
+```js
+devServer: {
+    devMiddleware: {
+        writeToDisk: true,
+    }
+}
+```
+
 
 
 # Questions
