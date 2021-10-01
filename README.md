@@ -269,6 +269,12 @@ this is my webpack.config.development.js file:
 
 `` can be a typo issue. if not please do ask for it in our discord channel ``
 
+### Solution
+add this in your package.json file in "development"
+```
+"development": "webpack serve --progress --config webpack.config.development.js", 
+```  
+
 ## Error 11
 
 ``I'm getting the following errors when I run npm start:``
