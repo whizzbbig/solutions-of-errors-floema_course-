@@ -134,11 +134,11 @@ error saying '@babel/core is missing'
 
 ### Reason
 ```
-Because it isn't installed in devDependencies
+Because it isn't installed in devDependencies and at bizzaro's end its installed globally
 ```
 
 ### Solution
-``npm install @babel/core``
+``npm i -D @babel/core``
 if not work try to install it globally by going to root directory
 
 how to go to root directory:
@@ -174,7 +174,7 @@ use this in package.json
   ## Error 6
 ![image](https://user-images.githubusercontent.com/54703305/129494894-3380f4a8-6603-4f78-9096-c8aa9553a1ae.png)
 
-### Reason
+### Reason  
 ```
 the problem is that you need to put the plugins outside the output object
 ```
