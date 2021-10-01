@@ -534,7 +534,7 @@ I've installed those plugins also and also did what bizarro did but then also no
 ``npm install eslint -g``
 which will install eslint globally. install it in your root directory ^ `~`
 
-if this not solve your problem then follow with the [Solution 2](#solution-2)
+if this not solve your problem then follow with the [Solution 2](###solution-2)
 
 #### Check for the plugin in globally by passing this ``npm list -g`` command on terminal which will log out the plugins which are installed globally like this
 ![Screenshot 2564-08-17 at 12 19 41 AM](https://user-images.githubusercontent.com/54703305/129614601-26b222e8-8ead-479c-a4da-4ac5ad97d605.png)
