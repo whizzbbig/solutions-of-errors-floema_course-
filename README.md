@@ -38,6 +38,7 @@ the error or bizzaro'ends showing no errors then come to this repo.
 - [[nodemon] app crashed - waiting for file changes before starting...](#error-19)
 - [bable-loader@8.2.2 requires a peer of @babel/core@^7.0.0 but none is installed. You must installed peer dependencies yourself](#error-20)
 - [writeToDisk Error](#error-21)
+- [cannot read property 'data' of undefined](#error-22)
 
 ## Questions
 - [Question 1](#question-1)
@@ -597,6 +598,31 @@ devServer: {
     }
 }
 ```
+
+## Error 22 
+
+![Cannot read property 'data' of undefined](https://media.discordapp.net/attachments/838608259413835806/842905509917229066/unknown.png)
+
+### Solution 
+```js
+app.get('/about', (req, res) => {
+
+      initApi(req).then(api => {
+        api.query(
+          Prismic.Predicates.any('document.type', ['meta', 'about']),
+        ).then(response => {
+          const{results} = response
+          const[about, meta] = results
+          console.log(about, meta)
+          res.render('pages/about', {
+            meta,
+            about
+          });
+        });
+      });
+    });
+    ```
+
 
 
 
