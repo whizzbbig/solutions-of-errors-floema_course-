@@ -5,7 +5,7 @@ made for the amazing course available on awwwards: [Building an immersive creati
 A repo of solutions related to huge bunch of errors
 all thanks to community members.
 
-Facing error downloading resources then download from [this](https://github.com/LunacTec/floema_resources) repo provided by lunactec.
+Facing error downloading resources, then download from [this](https://github.com/LunacTec/floema_resources) repo provided by lunactec.
 
 # Note 
 ``` 
