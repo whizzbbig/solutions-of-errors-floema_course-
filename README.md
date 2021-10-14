@@ -548,7 +548,7 @@ if you use this ``./node_modules/.bin/eslint --init`` in your project will solve
 ``[nodemon] app crashed - waiting for file changes before starting...`` 
 
 ### Reason
-``Usually happens when the servers process in the background.
+``Usually happens when the servers process in the background.``
 
 ### Solution
 ``so you need to stop them form terminal``
