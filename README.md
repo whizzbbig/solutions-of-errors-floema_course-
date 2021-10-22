@@ -39,6 +39,7 @@ the error or bizzaro'ends showing no errors then come to this repo.
 - [bable-loader@8.2.2 requires a peer of @babel/core@^7.0.0 but none is installed. You must installed peer dependencies yourself](#error-20)
 - [writeToDisk Error](#error-21)
 - [cannot read property 'data' of undefined](#error-22)
+- [ ERROR in unable to locate ](#error-23)
 
 ## Questions
 - [Question 1](#question-1)
@@ -625,7 +626,20 @@ app.get('/about', (req, res) => {
 
 ### If you still getting weird errors then try using this [repo](https://github.com/whizzbbig/floema) which exactly has the same progress you made till now 😁
 
+## Error 23
 
+```
+ ERROR in unable to locate '/Users/sandra/Dev/UAS/shared/**/*' glob 
+```
+
+### Reason
+
+You have to add some random file for a time just to make it to work and let you to complete making your boilerplate 
+
+### Solution
+
+taking this error as an example add some `.txt` file to make it work something like `shared/cool.txt`
+still had some problems just give some time to the repo i provided above and try to find the solution
 
 # Questions
 
