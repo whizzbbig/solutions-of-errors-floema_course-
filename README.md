@@ -9,8 +9,8 @@ Facing error downloading resources, then download from [this](https://github.com
 
 # Tools i used while working with the course
 
-Favicon Generator [link](https://favicon.io/)
-Social Media Meta Tags Generator [link](https://megatags.co/)
+- Favicon Generator [link](https://favicon.io/)
+- Social Media Meta Tags Generator [link](https://megatags.co/)
 
 # Note 
 ``` 
