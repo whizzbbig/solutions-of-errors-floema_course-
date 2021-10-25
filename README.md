@@ -7,6 +7,11 @@ all thanks to community members.
 
 Facing error downloading resources, then download from [this](https://github.com/LunacTec/floema_resources) repo provided by lunactec.
 
+# Tools i used while working with the course
+
+Favicon Generator [link](https://favicon.io/)
+Social Media Meta Tags Generator [link](https://megatags.co/)
+
 # Note 
 ``` 
 don't lose patience follow the course till the end of the slide and if you not able to counter
