@@ -6,6 +6,7 @@ A repo of solutions related to huge bunch of errors
 all thanks to community members.
 
 Facing error downloading resources, then download from [this](https://github.com/LunacTec/floema_resources) repo provided by lunactec.
+and also I made a repo which have commits according to the lecture of the course see [here](https://github.com/whizzbbig/webpack-boilerplate/commits/main)
 
 # Tools i used while working with the course
 
