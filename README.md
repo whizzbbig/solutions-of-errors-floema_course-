@@ -629,6 +629,24 @@ app.get('/about', (req, res) => {
       });
     });
  ```
+ go to `/about` to it'll work for sure and if you also want it to work on `pages/home` just for the sake of get rid of error.
+ then, you can go with same steps just edit the `about` with `home` 
+ 
+ for example:
+ ```js
+res.render('pages/about', {
+    meta,
+    about
+});
+```
+to this
+
+```js
+res.render('pages/home', {
+    meta,
+    home
+});
+```
 
 ### If you still getting weird errors then try using this [repo](https://github.com/whizzbbig/floema) which exactly has the same progress you made till now 😁
 
