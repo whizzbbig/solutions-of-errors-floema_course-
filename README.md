@@ -251,11 +251,8 @@ Typo Issue
 ``
 
 ## Solution
-``
-You can follow the course again and try to fix the typo in prismic or app.js file :(
-``
 
-or copy this json 
+There can be typo issue in your prismic repo or you just miss somethings to add, to refactor it copy the json file given below and go to your [product](https://floaema.prismic.io/masks/product.json/) document JSON Editor just replace the old one with the one you copied right now. and you good to go !!
 
 ```json
 {
