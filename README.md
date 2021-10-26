@@ -255,6 +255,106 @@ Typo Issue
 You can follow the course again and try to fix the typo in prismic or app.js file :(
 ``
 
+or copy this json 
+
+```json
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "UID"
+      }
+    },
+    "collection" : {
+      "type" : "Link",
+      "config" : {
+        "select" : "document",
+        "customtypes" : [ "collection" ],
+        "label" : "Collection"
+      }
+    },
+    "title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Title"
+      }
+    },
+    "image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "Image"
+      }
+    },
+    "model" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "Model"
+      }
+    },
+    "highlights" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "highlights_icon" : {
+            "type" : "Select",
+            "config" : {
+              "options" : [ "Arrow", "Star" ],
+              "default_value" : "Arrow",
+              "label" : "Icon"
+            }
+          },
+          "highlights_text" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Text"
+            }
+          }
+        },
+        "label" : "Highlights"
+      }
+    },
+    "informations" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "informations_label" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Label"
+            }
+          },
+          "informations_description" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Description"
+            }
+          }
+        },
+        "label" : "Informations"
+      }
+    },
+    "link_text" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Shop it - Text"
+      }
+    },
+    "link_url" : {
+      "type" : "Link",
+      "config" : {
+        "label" : "Shop it - Link",
+        "select" : null
+      }
+    }
+  }
+}
+```
+
 ## Error 10
 
 Getting this error when i try to run ``npm run development``
