@@ -765,7 +765,8 @@ still had some problems just give some time to the repo i provided above and try
 
 ## Error 24
 ```
-when I go to npm start in the terminal it's ok but when I open the about page I receive the error "TypeError: Prismic.getApi is not a function". 
+when I go to npm start in the terminal it's ok.
+but, when I open the about page I receive the error "TypeError: Prismic.getApi is not a function". 
 ```
 
 ### Reason
