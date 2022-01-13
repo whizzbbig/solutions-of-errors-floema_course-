@@ -161,7 +161,7 @@ user$-imac % cd ~
 and run command like
 ``npm install @babel/core -g``
 
-[Move Up](#errors)
+[Move To Errors List](#errors)
 
 ## Error 5
 
@@ -236,6 +236,10 @@ import image from './image.png';
 
 const text = 'Hello there, im a text';
 ```
+
+[Move To Errors List](#errors)
+
+
 
 ## Error 8
 
@@ -356,6 +360,10 @@ There can be typo issue in your prismic repo or you just miss somethings to add,
 }
 ```
 
+
+[Move To Errors List](#errors)
+
+
 ## Error 10
 
 Getting this error when i try to run ``npm run development``
@@ -421,6 +429,10 @@ or
 
 ``npm install -g concurrently`` by going to your root dir ``~``
 
+
+[Move To Errors List](#errors)
+
+
 ## Error 13
 
 ```
@@ -477,6 +489,9 @@ then you can use this
 ```app.use(express.json())
 app.use(express.urlencoded())
 ```
+
+[Move To Errors List](#errors)
+
 
 ## Error 16
 
@@ -635,6 +650,8 @@ npm start
 
 it happens sometimes because of not enought memory power or process power
 
+[Move To Errors List](#errors)
+
 ## Error 18 
 ``Failed to apply ESLint fixes to the document. Please consider opening an issue with steps to reproduce.``
 I've installed those plugins also and also did what bizarro did but then also nothing happens :'(
@@ -688,6 +705,9 @@ try installing @babel/core into your devDependencies by passing following comman
 ``if Solution 1 didn't help then try following solution 2 ( will definetly work ^ )`` 
 #### Solution 2
 try installing @babel/core ``globally``. there wasn't any error at bizzaro side where he hasn't installed this plugin in devDependencies this is because the plugin was installed globally try passing this command into your root ``~`` directory. To go in root directory pass this command ``cd ~`` ``npm install @babel/core -g``
+
+[Move To Errors List](#errors)
+
 
 ## Error 21
 
@@ -795,6 +815,8 @@ app.get('/about', (req, res) => {
   });
 });
 ```
+
+[Move To Errors List](#errors)
 
 # Questions
 
