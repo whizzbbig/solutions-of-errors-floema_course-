@@ -895,8 +895,10 @@ After you do the full course, if you check out this repo here: https://github.co
 ``is there any repo from where I can check and compare the commit with my code and see where I messed up with the code?`` by @anonymous
 
 ### Answer 11
-``
+```
 Yes, you can able to see commits if you download the source code zip from the site and open it in Github Desktop and check its history to see the commits.
 
 here is another repo made by me which has commits according to lectures of course 😁 
-https://github.com/whizzbbig/floema_/commits/main`` by @whizzbbig#3445
+https://github.com/whizzbbig/floema_/commits/main
+```
+by @whizzbbig#3445
