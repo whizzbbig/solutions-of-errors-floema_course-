@@ -47,6 +47,7 @@ the error or bizzaro'ends showing no errors then come to this repo.
 - [cannot read property 'data' of undefined](#error-22)
 - [ ERROR in unable to locate ](#error-23)
 - [ TypeError: Prismic.getApi is not a function ](#error-24)
+- [ Refused to apply style from 'http://localhost:8004/detail/main.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled. ](#error-25)
 
 ## Questions
 - [Question 1](#question-1)
@@ -815,6 +816,32 @@ app.get('/about', (req, res) => {
   });
 });
 ```
+
+## Error 25
+
+```
+Refused to apply style from 'http://localhost:8004/detail/main.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+```
+
+## Reason
+It happens when you set an incorrect URL to the file or when your server isn't configured properly. In the result, the browser DOESN'T get the stylesheet
+
+## Solution
+so here in our case we can add following things to resolve the issue firstly you have to add `type=text/css` in link and also don't forget to add `/` before 
+`main.css` file same goes with js file when we going to link it in future lecture you're gonna expereience this issue especially with route `/detail` if you not
+add `/` before the `index.js` file
+
+Example:
+main.css
+```pug
+link(rel="stylesheet" type="text/css" href="/main.css")
+```
+index.js
+```pug
+script(src="/main.js")
+```
+
+
 
 [Move To Errors List](#errors)
 
