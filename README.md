@@ -161,6 +161,8 @@ user$-imac % cd ~
 and run command like
 ``npm install @babel/core -g``
 
+[Move Up](#errors)
+
 ## Error 5
 
 ![image](https://user-images.githubusercontent.com/54703305/129494810-d8c17b75-8880-4e2e-aa4d-14e56c3747ec.png)
@@ -895,9 +897,9 @@ After you do the full course, if you check out this repo here: https://github.co
 ``is there any repo from where I can check and compare the commit with my code and see where I messed up with the code?`` by @anonymous
 
 ### Answer 11
-``Yes, you can able to see commits if you download the source code zip from the site and open it in Github Desktop and check its history to see the commits.
+Yes, you can able to see commits if you download the source code zip from the site and open it in Github Desktop and check its history to see the commits.
 
-here is another repo made by me which has commits according to lectures of course 😁 ``
+here is another repo made by me which has commits according to lectures of course 😁 
 ```
 https://github.com/whizzbbig/floema_/commits/main
 ```
