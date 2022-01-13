@@ -11,7 +11,7 @@ and also I made a repo which have commits according to the lecture of the course
 # Tools i used while working with the course
 
 - Favicon Generator [link](https://favicon.io/)
-- Social Media Meta Tags Generator [link](https://megatags.co/)
+- Social Media Meta Tags Generator [link](https://metatags.io/)
 
 # Note 
 ``` 
@@ -46,6 +46,7 @@ the error or bizzaro'ends showing no errors then come to this repo.
 - [writeToDisk Error](#error-21)
 - [cannot read property 'data' of undefined](#error-22)
 - [ ERROR in unable to locate ](#error-23)
+- [ TypeError: Prismic.getApi is not a function ](#error-24)
 
 ## Questions
 - [Question 1](#question-1)
@@ -761,6 +762,35 @@ You have to add some random file for a time just to make it to work and let you 
 
 taking this error as an example add some `.txt` file to make it work something like `shared/cool.txt`
 still had some problems just give some time to the repo i provided above and try to find the solution
+
+## Error 24
+```
+when I go to npm start in the terminal it's ok but when I open the about page I receive the error "TypeError: Prismic.getApi is not a function". 
+```
+
+### Reason
+You have to also call the function in the respective route ``/`` to get rid of this error
+
+### Solution
+taking route ``/about`` as a example
+
+```js
+app.get('/about', (req, res) => {
+  initApi(req).then((api) => {
+    api
+      .query(Prismic.Predicates.any('document.type', ['meta', 'about']))
+      .then((response) => {
+        const { results } = response;
+        const [about, meta] = results;
+        console.log(about, meta);
+        res.render('pages/about', {
+          meta,
+          about,
+        });
+      });
+  });
+});
+```
 
 # Questions
 
