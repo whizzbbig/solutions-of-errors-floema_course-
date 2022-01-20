@@ -113,11 +113,17 @@ encounterd by ``@patmw#9134``
 
 ### Reason
 ``` 
-yet another error produced because of typo
+This is because you're initialising the dev server in a wrong way which is deprecated in webpack V5.
 ```
 
 ### Solution
-``try to start again with the following lecture and follow the instructor carefully.``
+```js
+  devServer: {
+    devMiddleware: {
+      writeToDisk: true,
+    },
+  },
+```
 
 ## Error 3
 
