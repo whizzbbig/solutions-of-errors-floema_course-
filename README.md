@@ -800,9 +800,9 @@ but, when I open the about page I receive the error "TypeError: Prismic.getApi i
 ```
 
 ### Reason
-You have to also call the function in the respective route ``/`` to get rid of this error
+You have to also call the function in the respective route ``/`` to get rid of this error.
 
-### Solution
+### Solution 1
 taking route ``/about`` as a example
 
 ```js
@@ -822,6 +822,10 @@ app.get('/about', (req, res) => {
   });
 });
 ```
+
+### Solution 2
+Prismic recently got an update so by using the respective package that had been used in the project will resolve the issue
+`npm install @prismicio/client@5.1.0 --save ` soultion by @AndyCatch#4311
 
 ## Error 25
 
