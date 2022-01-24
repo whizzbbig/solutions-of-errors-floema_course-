@@ -48,6 +48,7 @@ the error or bizzaro'ends showing no errors then come to this repo.
 - [ ERROR in unable to locate ](#error-23)
 - [ TypeError: Prismic.getApi is not a function ](#error-24)
 - [ Refused to apply style from 'http://localhost:8004/detail/main.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled. ](#error-25)
+- [ throw new TypeError('Only absolute URLs are supported') ](#error-26)
 
 ## Questions
 - [Question 1](#question-1)
@@ -850,6 +851,15 @@ index.js
 ```pug
 script(src="/main.js")
 ```
+
+## Error 26 
+```
+throw new TypeError('Only absolute URLs are supported');
+```
+
+## Reason 
+You would have downloaded the repo i provided which has commits according to lectures but while trying to run it at localhost you have encountered this error it is because you haven't have .env file in your dir
+
 
 
 
