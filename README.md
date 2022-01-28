@@ -860,6 +860,18 @@ throw new TypeError('Only absolute URLs are supported');
 ## Reason 
 You would have downloaded the repo i provided which has commits according to lectures but while trying to run it at localhost you have encountered this error it is because you haven't have .env file in your dir
 
+## Solution
+to fix this issue make the file named `.env` to the folder and paste these Prismic Credentials to resolve the error or you can add your own prismic credentials.
+
+```sh
+PRISMIC_ACCESS_TOKEN=MC5ZWDhQMVJFQUFDTUFHazRI.77-9aSLvv73vv73vv73vv73vv70h77-9dGhvYO-_ve-_vRFpD--_vXcd77-9f--_ve-_ve-_ve-_ve-_ve-_ve-_vXE
+PRISMIC_CLIENT_ID=YX8P1REAACIAGk4G
+PRISMIC_CLIENT_SECRET=7559e127bfd27950ed7ff6ed58331b80
+PRISMIC_ENDPOINT=https://floema-ice.prismic.io/api/v2
+
+GOOGLE_ANALYTICS=GOOGLE_ANALYTICS
+```
+
 
 
 
