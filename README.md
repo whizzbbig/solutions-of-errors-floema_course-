@@ -758,7 +758,7 @@ app.get('/about', (req, res) => {
       });
     });
  ```
- go to `/about` it'll work for sure and if you also want it to work on `pages/home` just for the sake of get rid of error.
+ go to `/about` it'll work for sure and if you also want it to work on `pages/home` just for the sake to get rid of error.
  then, you can go with same steps just edit the `about` with `home` 
  
  for example:
