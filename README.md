@@ -801,7 +801,7 @@ but, when I open the about page I receive the error "TypeError: Prismic.getApi i
 ```
 
 ### Reason
-You have to also call the function in the respective route ``/`` to get rid of this error.
+Prismic updated their API to v6.
 
 ### Solution 1
 
