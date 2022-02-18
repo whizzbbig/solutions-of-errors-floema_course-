@@ -804,29 +804,13 @@ but, when I open the about page I receive the error "TypeError: Prismic.getApi i
 You have to also call the function in the respective route ``/`` to get rid of this error.
 
 ### Solution 1
-taking route ``/about`` as a example
 
-```js
-app.get('/about', (req, res) => {
-  initApi(req).then((api) => {
-    api
-      .query(Prismic.Predicates.any('document.type', ['meta', 'about']))
-      .then((response) => {
-        const { results } = response;
-        const [about, meta] = results;
-        console.log(about, meta);
-        res.render('pages/about', {
-          meta,
-          about,
-        });
-      });
-  });
-});
-```
+follow the migration guide from v5 to v6 [here](https://github.com/whizzbbig/webpack-boilerplate/commits/main)
 
-### Solution 2
-Prismic recently got an update so by using the respective package that had been used in the project will resolve the issue
-`npm install @prismicio/client@5.1.0 --save ` soultion by @AndyCatch#4311
+### Alternate Solution
+Prismic recently got an update so by using the respective package that had been used in the project will resolve the issue if you
+not want to migrate from v5 to v6 try this simple solution :).
+`npm install @prismicio/client@5.1.0 --save`
 
 ## Error 25
 
