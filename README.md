@@ -115,7 +115,7 @@ encounterd by ``@patmw#9134``
 
 ### Reason
 ``` 
-This is because you're initialising the dev server in a wrong way which is deprecated in webpack V5.
+This is because you're initialising the dev server in a way which is deprecated in webpack V5.
 ```
 
 ### Solution
