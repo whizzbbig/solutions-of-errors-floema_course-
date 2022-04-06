@@ -863,7 +863,7 @@ Invalid options object. Image Minimizer Plugin has been initialized using an opt
 ```
 
 ## Reason
-Webpack updated their way of using image-minimizer-webpack-plugin@3.2.3
+Webpack updated their way of using image-minimizer-webpack-plugin in version @3.2.3
 
 ## Solution
 ```js
