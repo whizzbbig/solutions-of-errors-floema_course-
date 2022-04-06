@@ -868,7 +868,7 @@ Webpack updated their way of using image-minimizer-webpack-plugin in version @3.
 ## Solution
 ```js
 new ImageMinimizerPlugin({
-    minimizerOptions: {
+    options: {
     plugins: [
         // interlaced: Interlace gif for progressive rendering.
         ['gifsicle', { interlaced: true }],
